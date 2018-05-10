@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CreateEventController">
+   <children>
+      <ImageView fitHeight="501.0" fitWidth="369.0" layoutX="-8.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@eventinfo.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="eventNameTextField" layoutX="74.0" layoutY="100.0" prefHeight="31.0" prefWidth="213.0" promptText="%nameTextField" />
+      <TextField fx:id="eventLocationTextField" layoutX="74.0" layoutY="164.0" prefHeight="31.0" prefWidth="213.0" promptText="%locationTextField" />
+      <ComboBox fx:id="categoryComboBox" layoutX="74.0" layoutY="227.0" prefHeight="31.0" prefWidth="213.0" promptText="%categoryComboBox" />
+      <DatePicker fx:id="dateDatePicker" layoutX="72.0" layoutY="296.0" prefHeight="31.0" prefWidth="213.0" promptText="%dateDatePicker" />
+      <TextField fx:id="entryTextField" layoutX="72.0" layoutY="355.0" prefHeight="31.0" prefWidth="213.0" promptText="%entryTextField" />
+      <Button fx:id="createButton" layoutX="108.0" layoutY="412.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="144.0" style="-fx-background-color: #5dceea;" text="%createEventButton" textFill="#141414" />
+      <Button fx:id="backButton" layoutX="277.0" layoutY="11.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="70.0" style="-fx-background-color: #444444;" text="%backLabel" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+   </children>
+</Pane>

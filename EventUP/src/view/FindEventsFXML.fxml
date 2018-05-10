@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="1026.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FindEventsController">
+   <children>
+      <ImageView fitHeight="599.0" fitWidth="1033.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@findevent.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="findEventsTableView" layoutX="22.0" layoutY="113.0" prefHeight="446.0" prefWidth="808.0" style="-fx-background-color: #ababab;">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="148.0" text="%FindEventColl1" />
+          <TableColumn fx:id="locationColumn" prefWidth="147.0" text="%FindEventColl2" />
+            <TableColumn fx:id="dateColumn" prefWidth="137.0" text="%FindEventColl3" />
+            <TableColumn fx:id="categoryColumn" prefWidth="150.0" text="%FindEventColl4" />
+            <TableColumn fx:id="entryColumn" prefWidth="89.0" text="%FindEventColl5" />
+            <TableColumn fx:id="userColumn" prefWidth="136.0" text="%FindEventColl6" />
+        </columns>
+      </TableView>
+      <Button fx:id="followButton" layoutX="864.0" layoutY="434.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="144.0" style="-fx-background-color: #a2277e;" text="%followEventButton" textFill="WHITE" />
+      <Button fx:id="backButton" layoutX="933.0" layoutY="12.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: #FEFDFD;" text="%backFindEventButton" />
+      <TextField fx:id="locationTextField" layoutX="839.0" layoutY="203.0" prefHeight="31.0" prefWidth="173.0" promptText="%enterlocationTextField" />
+      <ComboBox fx:id="categoryComboBox" layoutX="839.0" layoutY="286.0" prefHeight="31.0" prefWidth="173.0" promptText="%pickcategoryComboBox" style="-fx-background-color: #FEFDFD;" />
+      <TextField fx:id="nameTextField" layoutX="839.0" layoutY="161.0" prefHeight="31.0" prefWidth="173.0" promptText="%enterEventNameTextField" />
+      <DatePicker fx:id="datePicker" layoutX="839.0" layoutY="245.0" prefHeight="31.0" prefWidth="173.0" promptText="%dateFindEventDatePicker" style="-fx-background-color: #FEFDFD;" />
+      <Button fx:id="applyButton" layoutX="873.0" layoutY="336.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="131.0" style="-fx-background-color: #5e0d8f;" text="%applyFilterButton" textFill="WHITE" />
+      <Label layoutX="916.0" layoutY="134.0" text="FILTER" textFill="WHITE" />
+   </children>
+</Pane>

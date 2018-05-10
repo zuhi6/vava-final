@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="1099.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MyEventsController">
+   <children>
+      <ImageView fitHeight="607.0" fitWidth="1099.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@myevent.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="myEventsTableView" layoutX="14.0" layoutY="151.0" prefHeight="439.0" prefWidth="830.0" style="-fx-background-color: #ababab;">
+         <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="176.0" text="%MYEColl1" />
+            <TableColumn fx:id="locationColumn" minWidth="7.0" prefWidth="211.0" text="%MYEColl2" />
+            <TableColumn fx:id="dateColumn" prefWidth="172.0" text="%MYEColl3" />
+            <TableColumn fx:id="categoryTableColumn" prefWidth="173.0" text="%MYEColl4" />
+            <TableColumn fx:id="entryColumn" prefWidth="96.0" text="%MYEColl5" />
+         </columns>
+      </TableView>
+      <Button fx:id="createEventButton" layoutX="862.0" layoutY="408.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="216.0" style="-fx-background-color: #ea5d67;" text="%MYEcreateButton" />
+      <Button fx:id="removeEventButton" layoutX="862.0" layoutY="538.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="216.0" style="-fx-background-color: #ed9a51;" text="%MYEremoveButton" />
+      <Button fx:id="modifyEventButton" layoutX="862.0" layoutY="472.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="216.0" style="-fx-background-color: #62b3f8;" text="%MYEmodifyButton" />
+      <Button fx:id="backButton" layoutX="945.0" layoutY="18.0" mnemonicParsing="false" style="-fx-background-color: #FEFDFD;" text="%MYEbackButton" />
+   </children>
+</Pane>
